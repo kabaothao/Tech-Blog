@@ -20,7 +20,7 @@
 ## General Information
 
 - What is the purpose of your project?
-- To build a CMS style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts.
+- To build a CMS style blog site similar to a WordPress site, where developers can publish their blog posts and comment on other developers’ posts.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
