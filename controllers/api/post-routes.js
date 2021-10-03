@@ -106,6 +106,14 @@ router.put("/:id", withAuth, (req, res) => {
 });
 
 router.delete("/:id", withAuth, (req, res) => {
+  //Delete all comments from the post before deleting the actual post due to constraint.
+
+  Comment.destroy({
+    where: {
+      post_id: req.params.id,
+    },
+  });
+
   Post.destroy({
     where: {
       id: req.params.id,

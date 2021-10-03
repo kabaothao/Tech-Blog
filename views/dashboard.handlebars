@@ -1,4 +1,4 @@
-<div class="mb-5 pt-3">
+<div class="mb-5 pt-3 container">
     <h2 class="col-12 text-center">Dashboard | My Post</h2><hr>
     {{#if posts.length}}
 </div>
@@ -8,8 +8,11 @@
 {{/each}}
 
 {{else}}
-<h6 class="pb-4 has-text-centered is-italic">You currently have no post(s)</h6>
-
+    
+<h6 class="text-center">You currently have no post(s)</h6>
+<h6 class="text-center">
+    <a href="../dashboard/create/">Click here to add a new post</a>
+</h6>
 {{/if}}
 
 
