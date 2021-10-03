@@ -1,123 +1,86 @@
-# 14 Model-View-Controller (MVC): Tech Blog
+# Tech Blog
+> Outline a brief description of your project.
+- Live Demo [_here_](https://techblogheroku.herokuapp.com/login). 
 
-## Your Task
 
-Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing codebases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies. A simple Google search for any concept covered in this course returns thousands of think pieces and tutorials from developers of all skill levels!
+> <!-- If you have the project hosted somewhere, include the link here. -->
 
-Your task this week is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. You’ll build this site completely from scratch and deploy it to Heroku. Your app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+## Table of Contents
 
-## User Story
+- [General Info](#general-information)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
+<!-- * [License](#license) -->
 
-```md
-AS A developer who writes about tech
-I WANT a CMS-style blog site
-SO THAT I can publish articles, blog posts, and my thoughts and opinions
-```
+## General Information
 
-## Acceptance Criteria
+- What is the purpose of your project?
+- To build a CMS style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts.
 
-```md
-GIVEN a CMS-style blog site
-WHEN I visit the site for the first time
-THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
-WHEN I click on the homepage option
-THEN I am taken to the homepage
-WHEN I click on any other links in the navigation
-THEN I am prompted to either sign up or sign in
-WHEN I choose to sign up
-THEN I am prompted to create a username and password
-WHEN I click on the sign-up button
-THEN my user credentials are saved and I am logged into the site
-WHEN I revisit the site at a later time and choose to sign in
-THEN I am prompted to enter my username and password
-WHEN I am signed in to the site
-THEN I see navigation links for the homepage, the dashboard, and the option to log out
-WHEN I click on the homepage option in the navigation
-THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created
-WHEN I click on an existing blog post
-THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment
-WHEN I enter a comment and click on the submit button while signed in
-THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
-WHEN I click on the dashboard option in the navigation
-THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post
-WHEN I click on the button to add a new blog post
-THEN I am prompted to enter both a title and contents for my blog post
-WHEN I click on the button to create a new blog post
-THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post
-WHEN I click on one of my existing posts in the dashboard
-THEN I am able to delete or update my post and taken back to an updated dashboard
-WHEN I click on the logout option in the navigation
-THEN I am signed out of the site
-WHEN I am idle on the site for more than a set time
-THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
-```
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
-## Mock-Up
+## Technologies Used
 
-The following animation demonstrates the application functionality:
+- Visual Studio
+- Node.js
+- Javascipt
+- MySQL2
+- MYSQL Workbench
+- Git Bash
 
-![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.](./Assets/14-mvc-homework-demo-01.gif)
+## Features
 
-## Getting Started
+- This application was created using Git Bash to navigate the Tech Blog and testing in Postman, along with Node.js, MYSQL, Dotenv, Express, and Sequelize.
 
-Your application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views, use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
 
-You’ll also need the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables, the [bcrypt package](https://www.npmjs.com/package/bcrypt) to hash passwords, and the [express-session](https://www.npmjs.com/package/express-session) and [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) packages to add authentication.
+## Screenshots
 
-**Note**: The [express-session](https://www.npmjs.com/package/express-session) package stores the session data on the client in a cookie. When you are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to start a new session. This is the default behavior and you do not have to do anything to your application other than implement the npm package.
+![Example screenshot](https://github.com/kabaothao/Tech-Blog/blob/main/image/login.PNG)
+![Example screenshot](https://github.com/kabaothao/Tech-Blog/blob/main/image/newpost.PNG)
 
-## Grading Requirements
+<!-- If you have screenshots you'd like to share, include them here. -->
 
-This homework is graded based on the following criteria:
+## Setup
 
-### Technical Acceptance Criteria: 40%
+Project requirements:
+What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
 
-- Satisfies all of the preceding acceptance criteria plus the following:
+- The app was deployed on a walkthrough video that demonstrates its functionality.
+- Dependencies:
+- Express
+- Inquirer
+- Mysql2
+- Sequelize
+- Express-session
+- Connect-session-sequelize
+- Express-handlebars
+- Bcrypt-package
 
-  - Application’s folder structure follows the Model-View-Controller paradigm.
 
-  - Uses the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views.
+## Usage
 
-  - Application must be deployed to Heroku.
+How does one go about using it?
 
-### Deployment: 32%
+Based on this application the end user would be able to navigate to different pages such as the login, dashboard, password, post, and comments. 
 
-- Application deployed at live URL.
+## Acknowledgements
 
-- Application loads with no errors.
+Give credit here.
 
-- Application GitHub URL submitted.
+- This project was inspired by Trilogy Education.
+- Many thanks to Trilogy Education.
 
-- GitHub repository contains application code.
+## Contact
 
-### Application Quality: 15%
+Created by [@kabaothao](https://github.com/kabaothao) - feel free to contact me!
 
-- User experience is intuitive and easy to navigate.
+<!-- Optional -->
+<!-- ## License -->
+<!-- This project is open source and available under the [... License](). -->
 
-- User interface style is clean and polished.
-
-- Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-- Repository has a unique name.
-
-- Repository follows best practices for file structure and naming conventions.
-
-- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-- Repository contains multiple descriptive commit messages.
-
-- Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-- The URL of the functional, deployed application.
-
-- The URL of the GitHub repository, with a unique name and a readme describing the project.
-
----
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+<!-- You don't have to include all sections - just the one's relevant to your project -->
