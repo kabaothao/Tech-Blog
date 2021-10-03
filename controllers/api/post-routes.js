@@ -16,12 +16,12 @@ router.get("/", (req, res) => {
         attributes: ["id", "comment_text", "post_id", "user_id", "created_at"],
         include: {
           model: User,
-          attributes: ["username"],
+          attributes: ["username", "id"],
         },
       },
       {
         model: User,
-        attributes: ["username"],
+        attributes: ["username", "id"],
       },
     ],
   })
@@ -42,7 +42,7 @@ router.get("/:id", (req, res) => {
       // include the Comment model here:
       {
         model: User,
-        attributes: ["username"],
+        attributes: ["username", "id"],
       },
       {
         model: Comment,
@@ -106,8 +106,7 @@ router.put("/:id", withAuth, (req, res) => {
 });
 
 router.delete("/:id", withAuth, (req, res) => {
-  //Delete all comments from the post before deleting the actual post due to constraint.
-
+  //all comments delete from the post
   Comment.destroy({
     where: {
       post_id: req.params.id,
